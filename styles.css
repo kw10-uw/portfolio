@@ -21,8 +21,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
 }
 
 .navbar h1 {
@@ -52,4 +53,19 @@ body {
 /* Section padding for content below the navbar */
 main {
     padding-top: 80px; /* To avoid overlapping content with fixed navbar */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
