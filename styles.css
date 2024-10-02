@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Jura', sans-serif;
     background-color: #F4F4F2;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* Navbar */
@@ -12,7 +13,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px;
+    padding: 20px 5%;
     box-shadow: 0 4px 2px -2px gray;
     z-index: 1000;
 }
@@ -21,15 +22,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
     width: 100%;
 }
 
 .navbar h1 {
     font-size: 24px;
     margin: 0;
-    color: #20C997;
+    color: white;
 }
 
 .navbar ul {
@@ -38,6 +37,7 @@ body {
     padding: 0;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Ensures that items don't overflow the container */
 }
 
 .navbar ul li a {
@@ -57,9 +57,13 @@ main {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar .container {
-        padding-left: 15px;
-        padding-right: 15px;
+    .navbar {
+        padding: 20px 2%;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        gap: 10px;
     }
 }
 
