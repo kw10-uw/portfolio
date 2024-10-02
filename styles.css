@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Jura', sans-serif;
     background-color: #F4F4F2;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Navbar */
@@ -13,7 +13,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 5%;
     box-shadow: 0 4px 2px -2px gray;
     z-index: 1000;
 }
@@ -22,13 +21,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar h1 {
     font-size: 24px;
     margin: 0;
     color: white;
+    flex-shrink: 0; /* Ensures that the title doesn't shrink */
 }
 
 .navbar ul {
@@ -37,7 +40,10 @@ body {
     padding: 0;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Ensures that items don't overflow the container */
+    flex-grow: 1; /* Makes the ul take up available space */
+    justify-content: flex-end; /* Pushes the links to the right */
+    flex-wrap: wrap; /* Ensures the items wrap to the next line if needed */
+    overflow: hidden; /* Prevents the list from overflowing the container */
 }
 
 .navbar ul li a {
@@ -57,12 +63,7 @@ main {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 20px 2%;
-    }
-
     .navbar ul {
-        flex-direction: row;
         gap: 10px;
     }
 }
@@ -70,6 +71,6 @@ main {
 @media (max-width: 480px) {
     .navbar ul {
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-start; /* Align vertically when stacked */
     }
 }
