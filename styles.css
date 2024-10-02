@@ -1,33 +1,35 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Jura', sans-serif; /* Replace with your Figma design's font */
 }
 
+/* Body and General Styling */
 body {
+    background-color: #f4f4f4; /* Background color matching your design */
+    color: #333;
     line-height: 1.6;
+    font-size: 18px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
+/* Header Styling */
 header {
-    background: #282c34;
+    background-color: #282c34; /* Dark header */
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
 header h1 {
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
 header p {
-    margin-bottom: 20px;
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -36,55 +38,90 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-.btn {
+/* Button Styling */
+.download-btn, .more-btn {
     display: inline-block;
-    padding: 10px 20px;
-    background: #61dafb;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #61dafb; /* Blue button color */
     color: #282c34;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
-.btn:hover {
-    background: #21a1f1;
+.download-btn:hover, .more-btn:hover {
+    background-color: #21a1f1;
 }
 
-section {
-    padding: 40px 0;
-}
-
-h2 {
-    margin-bottom: 20px;
-    color: #282c34;
-}
-
-footer {
-    background: #282c34;
-    color: white;
+/* Section Styling */
+.content-section {
+    padding: 60px 0;
+    background-color: #fff;
     text-align: center;
-    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    color: #282c34;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.content-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #282c34;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
 footer a {
     color: #61dafb;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
 }
