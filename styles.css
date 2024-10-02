@@ -1,127 +1,70 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Jura', sans-serif; /* Replace with your Figma design's font */
 }
 
-/* Body and General Styling */
 body {
-    background-color: #f4f4f4; /* Background color matching your design */
-    color: #333;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    font-size: 18px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header Styling */
 header {
-    background-color: #282c34; /* Dark header */
-    color: white;
-    padding: 40px 0;
-    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+h1 {
+    font-size: 24px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Button Styling */
-.download-btn, .more-btn {
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    background-color: #61dafb; /* Blue button color */
-    color: #282c34;
+.cv-button {
+    background-color: #28a745;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
 }
 
-.download-btn:hover, .more-btn:hover {
-    background-color: #21a1f1;
-}
-
-/* Section Styling */
-.content-section {
-    padding: 60px 0;
+.about-section {
     background-color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.content-section h2 {
-    font-size: 2.5em;
-    color: #282c34;
-    margin-bottom: 20px;
-}
-
-.content-section p {
-    width: 70%;
-    margin: 0 auto;
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #555;
-}
-
-.content-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.content-section ul li {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #282c34;
-    color: white;
     padding: 40px 0;
-    text-align: center;
 }
 
-footer a {
-    color: #61dafb;
-    text-decoration: none;
-    font-size: 1.1em;
+.about-section .container {
+    width: 90%;
+    margin: auto;
 }
 
-footer a:hover {
-    text-decoration: underline;
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.footer-container {
-    width: 80%;
-    margin: 0 auto;
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
 }
