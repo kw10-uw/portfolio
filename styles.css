@@ -1,70 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F2;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+/* Navbar */
+.navbar {
+    background-color: #2C3E50;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
 }
 
-header .container {
+.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: auto;
 }
 
-h1 {
+.navbar h1 {
     font-size: 24px;
+    margin: 0;
+    color: white;
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
-nav ul li a {
-    color: #fff;
+.navbar ul li a {
+    color: white;
     text-decoration: none;
-}
-
-.cv-button {
-    background-color: #28a745;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.about-section {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
-.about-section .container {
-    width: 90%;
-    margin: auto;
-}
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-p {
     font-size: 16px;
-    margin-bottom: 15px;
-    color: #555;
+}
+
+.navbar ul li a:hover {
+    color: #20C997;
+}
+
+/* Section padding for content below the navbar */
+main {
+    padding-top: 80px; /* To avoid overlapping content with fixed navbar */
 }
