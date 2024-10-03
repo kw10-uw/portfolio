@@ -150,24 +150,29 @@ main {
 
 .about-content {
     display: flex;
-    align-items: stretch; /* Stretch to align with the image */
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 0; /* Remove gap to align the box to the image */
+    align-items: stretch; /* Stretch to align box height with the image */
+    justify-content: flex-start; /* Ensure content aligns correctly */
+    max-width: 100%; /* Make sure it spans the full width */
+    margin: 0;
+    gap: 0; /* Remove gap between image and text box */
 }
 
 .about-image img {
     max-width: 400px;
     height: auto;
     border-radius: 10px;
+    display: block;
+    object-fit: cover; /* Ensure the image retains its aspect ratio */
 }
 
 .about-box {
     background-color: #2C3E50; /* Background color for the box */
-    flex: 1;
-    display: flex;
-    align-items: center;
+    flex: 1; /* Take up the remaining space */
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%; /* Ensures it stretches to the full height of the section */
 }
 
 .about-text {
