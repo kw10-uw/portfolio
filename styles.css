@@ -55,11 +55,12 @@ main {
 }
 
 /* Hero Section */
+/* Hero Section */
 #hero {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 100px 0;
+    justify-content: space-between; /* Spread the content across the width */
+    padding: 100px 5%; /* Increase left and right padding */
     background-color: #F4F4F2;
 }
 
@@ -67,26 +68,26 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 60px; /* Increase the gap between text and image */
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px; /* Make the section take up more width */
     margin: 0 auto;
-    padding: 20px;
 }
 
 .hero-text {
     flex: 1;
+    max-width: 600px; /* Set a max-width for the text */
 }
 
 .hero-text h2 {
-    color: #2C3E50;
+    color: #20C997;
     font-size: 48px;
     margin-bottom: 10px;
 }
 
 .hero-text p {
     font-size: 18px;
-    color: #2C3E50;
+    color: #20C997;
     margin-bottom: 20px;
 }
 
@@ -97,7 +98,7 @@ main {
 
 .btn {
     padding: 10px 20px;
-    background-color: #20C997;
+    background-color: #2C3E50;
     color: white;
     border: none;
     text-decoration: none;
@@ -120,20 +121,26 @@ main {
 
 /* Image */
 .hero-image img {
-    max-width: 350px;
+    max-width: 400px; /* Increase image size slightly */
     height: auto;
     border-radius: 10px;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
+    #hero {
+        padding: 60px 5%;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 
     .hero-image img {
         margin-top: 20px;
+        max-width: 80%; /* Adjust image width on smaller screens */
     }
 }
 
