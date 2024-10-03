@@ -222,3 +222,15 @@ main {
         max-width: 100%;
     }
 }
+/* Experience and Education Section */
+#experience-education {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#experience-education img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
