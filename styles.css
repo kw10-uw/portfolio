@@ -144,17 +144,16 @@ main {
 
 /* About Me Section */
 #about {
-    padding: 100px 5%;
+    padding: 100px 0; /* Adjusted padding for better layout */
     background-color: #F4F4F2;
 }
 
 .about-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
+    align-items: stretch; /* Stretch to align with the image */
     max-width: 1200px;
     margin: 0 auto;
+    gap: 0; /* Remove gap to align the box to the image */
 }
 
 .about-image img {
@@ -163,8 +162,17 @@ main {
     border-radius: 10px;
 }
 
-.about-text {
+.about-box {
+    background-color: #2C3E50; /* Background color for the box */
     flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.about-text {
+    color: white; /* Text color for contrast in the box */
+    max-width: 600px;
 }
 
 .about-header {
@@ -190,9 +198,23 @@ main {
 
 .about-text p {
     font-size: 18px;
-    color: #2C3E50;
     line-height: 1.8;
     margin-bottom: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
 }
 
 
