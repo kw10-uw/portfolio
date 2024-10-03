@@ -67,7 +67,7 @@ main {
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 320px; /* Increase the gap between text/buttons and image */
+    gap: 300px; /* Increase the gap between text/buttons and image */
     width: 100%;
     max-width: 1200px; /* Adjusted to keep content more compact */
     margin: 0 auto;
