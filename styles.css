@@ -175,7 +175,7 @@ main {
 }
 
 .about-text {
-    color: white; /* Text color for contrast in the box */
+    color: #20C997; /* Text color for contrast in the box */
     max-width: 600px;
     width: 100%; /* Ensures the text takes up full width */
 }
@@ -202,7 +202,7 @@ main {
 }
 
 .about-text p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     margin-bottom: 20px;
 }
