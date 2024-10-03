@@ -144,39 +144,39 @@ main {
 
 /* About Me Section */
 #about {
-    padding: 100px 0; /* Adjusted padding for better layout */
+    padding: 100px 0;
     background-color: #F4F4F2;
 }
 
 .about-content {
     display: flex;
-    align-items: stretch; /* Stretch to align box height with the image */
-    justify-content: flex-start; /* Ensure content aligns correctly */
-    max-width: 100%; /* Make sure it spans the full width */
-    margin: 0;
-    gap: 0; /* Remove gap between image and text box */
+    align-items: stretch;
+    justify-content: flex-start;
+    max-width: 1200px; /* Adjust max width to control how far the content spreads */
+    margin: 0 auto; /* Center content */
+    gap: 0;
 }
 
 .about-image img {
     max-width: 400px;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
     display: block;
-    object-fit: cover; /* Ensure the image retains its aspect ratio */
+    margin-right: 0; /* Ensure the image aligns right up to the text box */
 }
 
 .about-box {
-    background-color: #2C3E50; /* Background color for the box */
+    background-color: #2C3E50;
     flex: 1; /* Take up the remaining space */
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%; /* Ensures it stretches to the full height of the section */
 }
 
 .about-text {
-    color: white; /* Text color for contrast in the box */
+    color: white;
     max-width: 600px;
 }
 
@@ -205,6 +205,14 @@ main {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
+}
+
+/* Ensure both image and text box have equal heights */
+.about-content > * {
+    flex-basis: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 /* Media Queries for responsiveness */
