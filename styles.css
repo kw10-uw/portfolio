@@ -144,39 +144,34 @@ main {
 
 /* About Me Section */
 #about {
-    padding: 100px 0;
+    padding: 100px 0; /* Adjusted padding for better layout */
     background-color: #F4F4F2;
 }
 
 .about-content {
     display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    max-width: 1200px; /* Adjust max width to control how far the content spreads */
-    margin: 0 auto; /* Center content */
-    gap: 0;
+    align-items: stretch; /* Stretch to align with the image */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 0; /* Remove gap to align the box to the image */
 }
 
 .about-image img {
     max-width: 400px;
     height: auto;
     border-radius: 10px;
-    object-fit: cover;
-    display: block;
-    margin-right: 0; /* Ensure the image aligns right up to the text box */
 }
 
 .about-box {
-    background-color: #2C3E50;
-    flex: 1; /* Take up the remaining space */
-    padding: 40px;
+    background-color: #2C3E50; /* Background color for the box */
+    flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 40px;
 }
 
 .about-text {
-    color: white;
+    color: white; /* Text color for contrast in the box */
     max-width: 600px;
 }
 
@@ -207,14 +202,6 @@ main {
     margin-bottom: 20px;
 }
 
-/* Ensure both image and text box have equal heights */
-.about-content > * {
-    flex-basis: auto;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-}
-
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .about-content {
@@ -229,6 +216,3 @@ main {
         max-width: 100%;
     }
 }
-
-
-
