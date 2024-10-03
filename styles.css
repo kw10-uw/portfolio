@@ -143,14 +143,15 @@ main {
 }
 
 /* About Me Section */
+/* About Me Section */
 #about {
-    padding: 100px 0; /* Adjusted padding for better layout */
+    padding: 100px 0;
     background-color: #F4F4F2;
 }
 
 .about-content {
     display: flex;
-    align-items: stretch; /* Stretch to align with the image */
+    align-items: stretch; /* Stretch to align box height with the image */
     max-width: 1200px;
     margin: 0 auto;
     gap: 0; /* Remove gap to align the box to the image */
@@ -160,19 +161,23 @@ main {
     max-width: 400px;
     height: auto;
     border-radius: 10px;
+    object-fit: cover; /* Ensure the image keeps its aspect ratio */
+    display: block;
 }
 
 .about-box {
     background-color: #2C3E50; /* Background color for the box */
     flex: 1;
+    padding: 40px;
     display: flex;
     align-items: center;
-    padding: 40px;
+    justify-content: center;
 }
 
 .about-text {
     color: white; /* Text color for contrast in the box */
     max-width: 600px;
+    width: 100%; /* Ensures the text takes up full width */
 }
 
 .about-header {
@@ -216,3 +221,4 @@ main {
         max-width: 100%;
     }
 }
+
