@@ -142,4 +142,58 @@ main {
     }
 }
 
+/* About Me Section */
+#about {
+    padding: 100px 5%;
+    background-color: #F4F4F2;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-header .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #20C997;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.about-header h2 {
+    color: #20C997;
+    font-size: 36px;
+    margin: 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #2C3E50;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
 
