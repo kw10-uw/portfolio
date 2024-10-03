@@ -168,6 +168,7 @@ main {
 .about-box {
     background-color: #2C3E50; /* Background color for the box */
     flex: 1;
+    width: 881px;
     padding: 40px;
     display: flex;
     align-items: center;
