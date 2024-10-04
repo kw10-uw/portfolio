@@ -238,10 +238,10 @@ main {
 /* Section Header for Experience and Education */
 .section-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Align closer to the center */
     align-items: center;
     margin-bottom: 40px;
-    max-width: 1200px;
+    max-width: 900px; /* Adjust max width to bring the elements closer */
     margin: 0 auto;
 }
 
