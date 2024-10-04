@@ -238,7 +238,7 @@ main {
 /* Section Header for Experience and Education */
 .section-header {
     display: flex;
-    justify-content: space-around; /* Align closer to the center */
+    justify-content: center; /* Align closer to the center */
     align-items: center;
     margin-bottom: 40px;
     max-width: 1200px; /* Adjust max width to bring the elements closer */
