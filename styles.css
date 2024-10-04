@@ -286,7 +286,6 @@ main {
     max-width: 1000px; /* Adjust this to control the width of the box */
     margin: 0 auto; /* Center the container horizontally */
     padding: 40px; /* Add padding inside the box */
-    background-color: #2C3E50; /* Ensure the background remains consistent */
     border-radius: 15px; /* Optional: Add rounded corners to the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for effect */
 }
