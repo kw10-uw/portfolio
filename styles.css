@@ -249,7 +249,7 @@ main {
 .section-header .left {
     position: absolute;
     left: 220px; /* Manually set distance from the left side */
-    top: -20px;
+    top: -50px;
     display: flex;
     align-items: center;
 }
@@ -258,7 +258,7 @@ main {
 .section-header .right {
     position: absolute;
     right: 220px; /* Manually set distance from the right side */
-    top: -20px;
+    top: -50px;
     display: flex;
     align-items: center;
 }
