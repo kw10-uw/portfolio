@@ -248,8 +248,8 @@ main {
 /* Left - Experience */
 .section-header .left {
     position: absolute;
-    left: 200px; /* Manually set distance from the left side */
-    top: 0;
+    left: 220px; /* Manually set distance from the left side */
+    top: -20px;
     display: flex;
     align-items: center;
 }
@@ -257,8 +257,8 @@ main {
 /* Right - Education */
 .section-header .right {
     position: absolute;
-    right: 200px; /* Manually set distance from the right side */
-    top: 0;
+    right: 220px; /* Manually set distance from the right side */
+    top: -20px;
     display: flex;
     align-items: center;
 }
