@@ -241,7 +241,7 @@ main {
     justify-content: space-around; /* Align closer to the center */
     align-items: center;
     margin-bottom: 40px;
-    max-width: 900px; /* Adjust max width to bring the elements closer */
+    max-width: 1100px; /* Adjust max width to bring the elements closer */
     margin: 0 auto;
 }
 
