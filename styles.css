@@ -243,6 +243,7 @@ main {
     margin-bottom: 40px;
     max-width: 1200px; /* Adjust max width to bring the elements closer */
     margin: 0 auto;
+    padding: 25px;
 }
 
 .section-header .left, .section-header .right {
