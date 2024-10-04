@@ -277,3 +277,82 @@ main {
     color: #20C997;
 }
 
+/* Projects Section */
+#projects {
+    padding: 100px 0;
+    background-color: #2C3E50;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    color: #20C997;
+}
+
+.section-header .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #20C997;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.project-card {
+    background-color: #20C997;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%; /* Adjust based on design */
+    min-height: 150px;
+    text-decoration: none;
+    color: #2C3E50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-logos img {
+    max-width: 40px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* More Button */
+.more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.more-button:hover {
+    background-color: #17a085;
+}
+
+
