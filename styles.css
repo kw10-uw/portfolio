@@ -278,6 +278,7 @@ main {
 }
 
 /* Projects Section */
+/* Projects Section */
 #projects {
     padding: 100px 0;
     background-color: #2C3E50;
@@ -334,9 +335,11 @@ main {
     align-items: center;
 }
 
+/* Updated logo size */
 .project-logos img {
-    max-width: 40px;
-    height: auto;
+    max-width: 40px; /* Adjust to an appropriate size for the logo */
+    max-height: 40px; /* Ensure the height is also constrained */
+    object-fit: contain; /* Keep the aspect ratio of the logos */
     margin-left: 10px;
 }
 
@@ -354,5 +357,4 @@ main {
 .more-button:hover {
     background-color: #17a085;
 }
-
 
