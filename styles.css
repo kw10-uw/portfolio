@@ -302,7 +302,7 @@ main {
 .section-header .dot {
     width: 15px;
     height: 15px;
-    background-color: #20C997;
+    background-color: #2C3E50;
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
@@ -311,6 +311,7 @@ main {
 .section-header h2 {
     font-size: 36px;
     margin: 0;
+    color: #2C3E50;
 }
 
 .projects-grid {
