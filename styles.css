@@ -225,6 +225,7 @@ main {
 /* Experience and Education Section */
 /* Experience and Education Section */
 #experience {
+    position: relative; /* Parent element for absolute positioning */
     padding: 100px 0;
     text-align: center;
 }
@@ -237,16 +238,27 @@ main {
 
 /* Section Header for Experience and Education */
 .section-header {
-    display: flex;
-    justify-content: center; /* Align closer to the center */
-    align-items: center;
+    position: relative;
     margin-bottom: 40px;
-    max-width: 1200px; /* Adjust max width to bring the elements closer */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 25px;
+    height: 50px; /* Height for proper alignment */
 }
 
-.section-header .left, .section-header .right {
+/* Left - Experience */
+.section-header .left {
+    position: absolute;
+    left: 150px; /* Manually set distance from the left side */
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Right - Education */
+.section-header .right {
+    position: absolute;
+    right: 150px; /* Manually set distance from the right side */
+    top: 0;
     display: flex;
     align-items: center;
 }
@@ -264,5 +276,4 @@ main {
     font-size: 24px;
     color: #2C3E50;
 }
-
 
