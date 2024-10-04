@@ -224,12 +224,12 @@ main {
 }
 /* Experience and Education Section */
 /* Experience and Education Section */
-#experience-education {
+#experience {
     padding: 100px 0;
     text-align: center;
 }
 
-#experience-education img {
+#experience img {
     max-width: 100%;
     height: auto;
     display: inline-block;
