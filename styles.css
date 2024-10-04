@@ -278,10 +278,15 @@ main {
 }
 
 /* Projects Section */
-/* Projects Section */
 #projects {
     padding: 100px 0;
     background-color: #2C3E50;
+}
+
+#projects .container {
+    max-width: 1200px; /* Set the max width for the entire section */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 0 20px; /* Add some padding to the sides */
 }
 
 .section-header {
@@ -302,7 +307,7 @@ main {
 }
 
 .section-header h2 {
-    font-size: 18px;
+    font-size: 36px;
     margin: 0;
 }
 
@@ -311,6 +316,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
+    max-width: 100%; /* Ensure grid stays within the section */
 }
 
 .project-card {
@@ -335,11 +341,10 @@ main {
     align-items: center;
 }
 
-/* Updated logo size */
 .project-logos img {
-    max-width: 40px; /* Adjust to an appropriate size for the logo */
-    max-height: 40px; /* Ensure the height is also constrained */
-    object-fit: contain; /* Keep the aspect ratio of the logos */
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: contain;
     margin-left: 10px;
 }
 
@@ -357,4 +362,3 @@ main {
 .more-button:hover {
     background-color: #17a085;
 }
-
