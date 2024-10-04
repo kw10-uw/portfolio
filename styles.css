@@ -280,13 +280,16 @@ main {
 /* Projects Section */
 #projects {
     padding: 100px 0;
-    background-color: #2C3E50;
+    background-color: #2C3E50; /* Background color for the entire section */
 }
 
 #projects .container {
-    max-width: 1200px; /* Set the max width for the entire section */
-    margin: 0 auto; /* Center the section horizontally */
-    padding: 0 20px; /* Add some padding to the sides */
+    max-width: 1000px; /* Adjust this to control the width of the box */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 40px; /* Add padding inside the box */
+    background-color: #2C3E50; /* Ensure the background remains consistent */
+    border-radius: 15px; /* Optional: Add rounded corners to the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for effect */
 }
 
 .section-header {
@@ -316,7 +319,6 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
-    max-width: 100%; /* Ensure grid stays within the section */
 }
 
 .project-card {
