@@ -277,9 +277,8 @@ main {
     color: #20C997;
 }
 
-/* Projects Section */
 #projects {
-    padding: 10px 0; /* Background color for the entire section */
+    padding: 40px 0 10px; /* Reduce top padding to bring it closer to the Experience section */
 }
 
 #projects .container {
@@ -290,11 +289,16 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for effect */
 }
 
-.section-header {
+/* Adjusted Section Header for Projects */
+#projects .section-header {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    justify-content: flex-start;
+}
+
+#projects .section-header h2 {
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure it spans the whole width of the container */
     color: #20C997;
 }
 
@@ -307,12 +311,6 @@ main {
     margin-right: 10px;
 }
 
-.section-header h2 {
-    font-size: 24px;
-    margin: 0;
-    color: #20C997;
-}
-
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
@@ -320,6 +318,7 @@ main {
     justify-content: space-around;
 }
 
+/* Project Cards */
 .project-card {
     background-color: #20C997;
     border-radius: 10px;
