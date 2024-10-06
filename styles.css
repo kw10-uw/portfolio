@@ -363,3 +363,52 @@ main {
 .more-button:hover {
     background-color: #17a085;
 }
+/* Contact Me Section */
+#contact {
+    padding: 50px 0;
+    background-color: #2C3E50;
+    text-align: center;
+    color: #20C997;
+}
+
+#contact .container {
+    max-width: 800px; /* Limit the width of the section */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #20C997;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    font-size: 18px;
+}
+
+.contact-item img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+}
+
+.contact-item a {
+    color: #20C997;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
