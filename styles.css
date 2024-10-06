@@ -286,8 +286,7 @@ main {
     max-width: 1000px; /* Adjust this to control the width of the box */
     margin: 0 auto; /* Center the container horizontally */
     padding: 40px; /* Add padding inside the box */
-    background-color: #20C997;
-    border-radius: 15px; /* Optional: Add rounded corners to the box */
+    background-color: #2C3E50;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for effect */
 }
 
@@ -302,16 +301,16 @@ main {
 .section-header .dot {
     width: 15px;
     height: 15px;
-    background-color: #2C3E50;
+    background-color: #20C997;
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
 }
 
 .section-header h2 {
-    font-size: 36px;
+    font-size: 18px;
     margin: 0;
-    color: #2C3E50;
+    color: #20C997;
 }
 
 .projects-grid {
