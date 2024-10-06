@@ -278,7 +278,7 @@ main {
 }
 
 #projects {
-    padding: 40px 0 10px; /* Reduce top padding to bring it closer to the Experience section */
+    padding: 10px 0 10px; /* Reduce top padding to bring it closer to the Experience section */
 }
 
 #projects .container {
